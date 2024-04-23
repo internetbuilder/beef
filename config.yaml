@@ -36,7 +36,7 @@ beef:
     http:
         debug: false #Thin::Logging.debug, very verbose. Prints also full exception stack trace.
         host: "0.0.0.0"
-        port: "443"
+        port: "3000"
 
         # Decrease this setting to 1,000 (ms) if you want more responsiveness
         #  when sending modules and retrieving results.
