@@ -1,4 +1,4 @@
-===============================================================================
+================================================================================
 
     Copyright (c) 2006-2024 Wade Alcorn - wade@bindshell.net
     Browser Exploitation Framework (BeEF) - https://beefproject.com
