@@ -8,7 +8,7 @@
 beef:
     version: '0.5.4.0'
     # More verbose messages (server-side)
-    debug: true
+    debug: false
     # More verbose messages (client-side)
     client_debug: false
     # Used for generating secure tokens
@@ -54,9 +54,9 @@ beef:
         # configure the public-facing connection details here.
 
         #public:
-            host: "3000-internetbuilder-beef-95xilrixu2o.ws-us110.gitpod.io" # public hostname/IP address
-            port: "443" # public port (443 if the public server is using HTTPS)
-            https: true # true/false
+        #    host: "beef.local" # public hostname/IP address
+        #    port: "443" # public port (443 if the public server is using HTTPS)
+        #    https: false # true/false
 
         # If using any reverse proxy you should also set allow_reverse_proxy to true below.
         # Note that this causes the BeEF server to trust the X-Forwarded-For HTTP header.
@@ -66,7 +66,7 @@ beef:
 
         # Hook
         hook_file: "/hook.js"
-        hook_session_name: "HOOK"
+        hook_session_name: "BEEFHOOK"
 
         # Allow one or multiple origins to access the RESTful API using CORS
         # For multiple origins use: "http://browserhacker.com, http://domain2.com"
@@ -76,7 +76,7 @@ beef:
 
         # Prefer WebSockets over XHR-polling when possible.
         websocket:
-            enable: true
+            enable: false
             port: 61985 # WS: good success rate through proxies
             # Use encrypted 'WebSocketSecure'
             # NOTE: works only on HTTPS domains and with HTTPS support enabled in BeEF
@@ -93,7 +93,7 @@ beef:
             hook_root: false # inject BeEF hook in the server home page
         # Experimental HTTPS support for the hook / admin / all other Thin managed web services
         https:
-            enable: true
+            enable: false
             # In production environments, be sure to use a valid certificate signed for the value
             # used in beef.http.public (the domain name of the server where you run BeEF)
             key: "beef_key.pem"
