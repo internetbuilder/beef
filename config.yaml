@@ -8,7 +8,7 @@
 beef:
     version: '0.5.4.0'
     # More verbose messages (server-side)
-    debug: false
+    debug: true
     # More verbose messages (client-side)
     client_debug: false
     # Used for generating secure tokens
@@ -17,8 +17,8 @@ beef:
     # Credentials to authenticate in BeEF.
     # Used by both the RESTful API and the Admin interface
     credentials:
-        user:   "beefuser"
-        passwd: "beefpass"
+        user:   "beef"
+        passwd: "beef"
 
     # Interface / IP restrictions
     restrictions:
