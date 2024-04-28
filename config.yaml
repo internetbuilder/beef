@@ -8,9 +8,9 @@
 beef:
     version: '0.5.4.0'
     # More verbose messages (server-side)
-    debug: false
+    debug: true
     # More verbose messages (client-side)
-    client_debug: false
+    client_debug: true
     # Used for generating secure tokens
     crypto_default_value_length: 80
 
@@ -24,7 +24,7 @@ beef:
     restrictions:
         # subnet of IP addresses that can hook to the framework
         permitted_hooking_subnet: ["0.0.0.0/0", "::/0"]
-        # permitted_hooking_subnet: ["127.0.0.1/32", "::1/128"]
+        # permitted_hooking_subnet: ["192.168.129.0/32", "::1/128"]
         # subnet of IP addresses that can connect to the admin UI
         # permitted_ui_subnet: ["127.0.0.1/32", "::1/128"]
         permitted_ui_subnet: ["0.0.0.0/0", "::/0"]
@@ -54,10 +54,10 @@ beef:
         # If you're using a public domain name, reverse proxy, or port forwarding you must
         # configure the public-facing connection details here.
 
-        #public:
-        #    host: "beef.local" # public hostname/IP address
-        #    port: "443" # public port (443 if the public server is using HTTPS)
-        #    https: false # true/false
+        public:
+            host: "3000-internetbuilder-beef-95xilrixu2o.ws-us110.gitpod.io" # public hostname/IP address
+            port: "443" # public port (443 if the public server is using HTTPS)
+            https: true # true/false
 
         # If using any reverse proxy you should also set allow_reverse_proxy to true below.
         # Note that this causes the BeEF server to trust the X-Forwarded-For HTTP header.
